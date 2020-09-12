@@ -97,10 +97,10 @@ const ModalProvider: FC = ({ children }) => {
 
       return Component ? (
         <Component
-          {...props}
-          key={id}
           onClose={handleClose}
           onExited={handleExited}
+          {...props}
+          key={id}
         />
       ) : null;
     });
